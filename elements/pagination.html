@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pagination — Color Fix &amp; Existing-Class Designs</title>
+  <link rel="stylesheet" href="../css/cssvars.css" />
+
+
+
+</head>
+<body>
+<div class="container p-v-4">
+
+  <h1>Pagination</h1>
+
+
+  <div class="row gap-3 m-t-2">
+
+    <!-- 1. Standard, elevated -->
+    <div class="col-12 col-md-6">
+      <div class="panel p-panel h-100-min">
+        <p class="bold small m0">Standard, elevated</p>
+        <nav aria-label="Standard pagination" class="m-t-1">
+          <ul class="pagination shadow-control">
+            <li class="page-item"><a class="page-link" href="#">«</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">»</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- 2. Circle numbers + icon arrows -->
+    <div class="col-12 col-md-6">
+      <div class="panel p-panel h-100-min">
+        <p class="bold small m0">Circle numbers + icon arrows</p>
+        <nav aria-label="Circle pagination" class="m-t-1">
+          <ul class="d-flex align-items-center gap-1" style="list-style:none;padding:0;margin:0;">
+            <li>
+              <a href="#" class="d-flex align-items-center justify-content-center circle bg-control shadow-control icon-xs">
+                <svg viewBox="0 0 24 24" class="icon-xxs icon-white-fill"><path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"></path></svg>
+              </a>
+            </li>
+            <li><a href="#" class="d-flex align-items-center justify-content-center circle bga-color-1 icon-xs bold">1</a></li>
+            <li><a href="#" class="d-flex align-items-center justify-content-center circle bg-control shadow-control icon-xs bold color-1 white">2</a></li>
+            <li><a href="#" class="d-flex align-items-center justify-content-center circle bg-control shadow-control icon-xs bold color-1 white">3</a></li>
+            <li>
+              <a href="#" class="d-flex align-items-center justify-content-center circle bg-control shadow-control icon-xs">
+                <svg viewBox="0 0 24 24" class="icon-xxs icon-white-fill"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"></path></svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- 3. Minimal outline -->
+    <div class="col-12 col-md-6">
+      <div class="panel p-panel h-100-min">
+        <p class="bold small m0">Minimal outline</p>
+        <nav aria-label="Outline pagination" class="m-t-1">
+          <ul class="d-flex align-items-center gap-1" style="list-style:none;padding:0;margin:0;">
+            <li><a href="#" class="p-1-2 rounded-input border-input small color-1">«</a></li>
+            <li><a href="#" class="p-1-2 rounded-input border-input small bold bg-color-1 white">1</a></li>
+            <li><a href="#" class="p-1-2 rounded-input border-input small color-1">2</a></li>
+            <li><a href="#" class="p-1-2 rounded-input border-input small color-1">3</a></li>
+            <li><a href="#" class="p-1-2 rounded-input border-input small color-1">4</a></li>
+            <li><a href="#" class="p-1-2 rounded-input border-input small color-1">»</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <!-- 4. Compact "Page X of Y" -->
+    <div class="col-12 col-md-6">
+      <div class="panel p-panel h-100-min">
+        <p class="bold small m0">Compact "Page X of Y"</p>
+        <nav aria-label="Compact pagination" class="d-flex align-items-center justify-content-between m-t-1">
+          <button class="button rounded-control shadow-control d-inline-flex align-items-center gap-1">
+            <svg viewBox="0 0 24 24" class="icon-xxs icon-white-fill"><path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z"></path></svg>
+            Prev
+          </button>
+          <span class="small bold color-1">Page 2 of 12</span>
+          <button class="button rounded-control shadow-control d-inline-flex align-items-center gap-1">
+            Next
+            <svg viewBox="0 0 24 24" class="icon-xxs icon-white-fill"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"></path></svg>
+          </button>
+        </nav>
+      </div>
+    </div>
+
+
+    <!-- 5. Pill numbers (existing .pill component) -->
+    <div class="col-12 col-md-6">
+      <div class="panel p-panel h-100-min">
+        <p class="bold small m0">Pill numbers <span style="opacity:.6;">(<code>.pill</code>)</span></p>
+        <nav aria-label="Pill pagination" class="d-flex align-items-center gap-1 m-t-1">
+          <a href="#" class="pill">«</a>
+          <a href="#" class="pill active">1</a>
+          <a href="#" class="pill">2</a>
+          <a href="#" class="pill">3</a>
+          <a href="#" class="pill">»</a>
+        </nav>
+      </div>
+    </div>
+
+
+    <!-- 6. Chip numbers -->
+    <div class="col-12 col-md-6">
+      <div class="panel p-panel h-100-min">
+        <p class="bold small m0">Chip numbers <span style="opacity:.6;">(<code>.chip</code>)</span></p>
+        <nav aria-label="Chip pagination" class="d-flex align-items-center m-t-1">
+          <a href="#" class="chip">1</a>
+          <a href="#" class="chip chip-color-1">2</a>
+          <a href="#" class="chip">3</a>
+          <a href="#" class="chip">4</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- 7. Badge numbers -->
+    <div class="col-12 col-md-6">
+      <div class="panel p-panel h-100-min">
+        <p class="bold small m0">Badge numbers <span style="opacity:.6;">(<code>.badge</code>)</span></p>
+        <nav aria-label="Badge pagination" class="d-flex align-items-center gap-2 m-t-2">
+          <a href="#" class="badge color-1">1</a>
+          <a href="#" class="badge bg-color-1 white bold">2</a>
+          <a href="#" class="badge color-1">3</a>
+          <a href="#" class="badge color-1">4</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- 8. Underline tabs reused as pagination -->
+    <div class="col-12 col-md-6">
+      <div class="panel p-panel h-100-min">
+        <p class="bold small m0">Underline <span style="opacity:.6;">(<code>.tabs-underline</code>)</span></p>
+        <div class="tabs tabs-underline m-t-1">
+          <input type="radio" name="pg-underline" id="pgu-1">
+          <label for="pgu-1">1</label>
+          <input type="radio" name="pg-underline" id="pgu-2" checked>
+          <label for="pgu-2">2</label>
+          <input type="radio" name="pg-underline" id="pgu-3">
+          <label for="pgu-3">3</label>
+          <input type="radio" name="pg-underline" id="pgu-4">
+          <label for="pgu-4">4</label>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 9. Large typographic, borderless -->
+    <div class="col-12 col-md-6">
+      <div class="panel p-panel h-100-min">
+        <p class="bold small m0">Large typographic</p>
+        <nav aria-label="Typographic pagination" class="d-flex align-items-center gap-3 m-t-2">
+          <a href="#" class="display-5 color-1 opacity05">1</a>
+          <a href="#" class="display-5 bold color-1">2</a>
+          <a href="#" class="display-5 color-1 opacity05">3</a>
+          <a href="#" class="display-5 color-1 opacity05">4</a>
+        </nav>
+      </div>
+    </div>
+
+    <!-- 10. Vertical (flex-column utility on the existing component) -->
+    <div class="col-12 col-md-6">
+      <div class="panel p-panel h-100-min">
+        <p class="bold small m0">Vertical <span style="opacity:.6;">(<code>.pagination.flex-column</code>)</span></p>
+        <nav aria-label="Vertical pagination" class="m-t-1">
+          <ul class="pagination flex-column shadow-control" style="width:fit-content;">
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </div>
+
+
+  
+
+</div>
+</body>
+</html>

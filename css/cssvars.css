@@ -760,32 +760,31 @@ blockquote {
 .pagination {
   display: flex;
   list-style: none;
-  padding:var(--control-padding);
-  border-radius:var(--control-radius);
-  box-shadow:var(--control-shadow);
+  padding: var(--control-padding);
+  border-radius: var(--control-radius);
+  box-shadow: var(--control-shadow);
 }
 .btn-link, .page-link, .page-link:focus, .page-link:hover {
-  color: var(--control-color, var(--color-1));
+  color: var(--color-1, black);
 }
 .page-link {
   position: relative;
   display: block;
   padding: 0.5rem 0.75rem;
   line-height: var(--line-height, 1.2);
-  color: var(--control-color, var(--color-1));
-  background-color: var(--control-bg);
+  color: var(--color-1, black);
+  background-color: var(--white, #fff);
   border: 0.0625rem solid var(--light-grey, #dee2e6);
 }
 .page-item.active .page-link, .page-link:focus, .page-link:hover {
-  background-color: var(--control-hover-bg);
-  color: var(--control-hover-color);
+  background-color: var(--surface-hover);
+  color: var(--color-1, black);
   border-color: var(--color-1, black);
 }
 .page-item.active .page-link {
-  z-index: 1;
-  background-color: var(--control-active-bg);
-  color: var(--control-active-color);
-  border-color: var(--control-bg);
+  background-color: var(--color-1, black);
+  color: var(--white, #fff);
+  border-color: var(--color-1, black);
 }
 /* Buttons */
 button, .button, .accordion-label, .tabs > label {
