@@ -122,7 +122,7 @@
   --control-padding: 0.37rem 0.95rem;
   --control-margin: 0.5rem 0.1rem;
   --control-shadow: var(--shadow-style, 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.24));
-  --control-hover-bg: var(--surface-hover);
+  --control-hover-bg: color-mix(in srgb, var(--color-1, black) 10%, transparent);
   --control-hover-color: var(--color-1);
   --control-hover-border: var(--color-1);
   --control-active-bg: var(--surface-active);
