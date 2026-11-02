@@ -251,7 +251,6 @@ main > * + * {
 ol, ul, dl {
   margin-top: 0;
   margin-bottom: 1rem;
-  text-align: left;
 }
 ol ol, ul ul, ol ul, ul ol {  margin-bottom: 0;}
 dt {  font-weight: var(--heading-font-weight, 400);}
@@ -2623,7 +2622,6 @@ progress {
   right: 0;
   bottom: 0;
   left: 0;
-  text-align: left;
   background: var(--surface-overlay);
   transition: opacity var(--duration-base, 0.25s) var(--easing, ease);
   z-index: var(--z-modal, 1000);
